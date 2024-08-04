@@ -23,5 +23,4 @@ public class HoaDon {
 
     @Column(name = "tong_gia")
     private Float tongGia;
-
 }
