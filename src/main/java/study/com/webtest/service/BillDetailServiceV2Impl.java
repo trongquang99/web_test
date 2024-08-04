@@ -59,7 +59,7 @@ public class BillDetailServiceV2Impl implements BillServiceV2{
             }
             billDetailResponseV2.setId(hoaDon.getId());
             billDetailResponseV2.setTongTien(hoaDon.getTongGia());
-            billDetailResponseV2.setNgayThanhToan(hoaDon.getNgay_thanh_toan());
+            billDetailResponseV2.setNgayThanhToan(hoaDon.getNgayThanhToan());
 
             List<DuLieuSanPham> danhSachSpChiTiet = new ArrayList<>();
             List<HoaDonSanPham> danhSachHoaDonSanPham = hoaDonSanPhamRepository.findByIdHd(hoaDon.getId());

@@ -16,10 +16,10 @@ public class HoaDon {
     private Long idKh;
 
     @Column(name = "id_Nv")
-    private Long id_nv;
+    private Long idNv;
 
     @Column(name = "ngay_thanh_toan")
-    private Date ngay_thanh_toan;
+    private Date ngayThanhToan;
 
     @Column(name = "tong_gia")
     private Float tongGia;

@@ -41,7 +41,7 @@ public class BillServiceImpl implements BillService {
         billDetailResponse.setTenCh(cuaHangById.getTen());
         billDetailResponse.setDiaChi(cuaHangById.getDiChi());
         billDetailResponse.setTenKh(khachHangById.getTen());
-        billDetailResponse.setNgayThanhToan(hoaDonById.getNgay_thanh_toan());
+        billDetailResponse.setNgayThanhToan(hoaDonById.getNgayThanhToan());
         billDetailResponse.setTongThanhToan(hoaDonById.getTongGia());
 //        return billDetailResponse;
         //Khởi tạo list spchitiet => adđ response  -> BillDetailResponse
@@ -169,7 +169,7 @@ public class BillServiceImpl implements BillService {
             }
 
             billDetailResponse.setIdHd(hoaDonList.get(i).getId());
-            billDetailResponse.setNgayThanhToan(hoaDonList.get(i).getNgay_thanh_toan());
+            billDetailResponse.setNgayThanhToan(hoaDonList.get(i).getNgayThanhToan());
             billDetailResponse.setTongThanhToan(hoaDonList.get(i).getTongGia());
 
             List<BillDetailResponse.SpChiTiet> danhSachSpChiTiet = new ArrayList<>();
