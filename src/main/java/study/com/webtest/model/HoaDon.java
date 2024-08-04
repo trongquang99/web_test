@@ -19,7 +19,7 @@ public class HoaDon {
     private Long idNv;
 
     @Column(name = "ngay_thanh_toan")
-    private Date dateSuccess;
+    private Date ngayThanhToan;
 
     @Column(name = "tong_gia")
     private Float tongGia;
