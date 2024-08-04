@@ -160,7 +160,7 @@ public class NguoiServiceImpl implements NguoiService{
             existingHoaDon.setIdKh(hoaDon.getIdKh());
             existingHoaDon.setIdNv(hoaDon.getIdNv());
             existingHoaDon.setTongGia(hoaDon.getTongGia());
-            existingHoaDon.setNgayThanhToan(hoaDon.getNgayThanhToan());
+            existingHoaDon.setDateSuccess(hoaDon.getDateSuccess());
 
             return hoaDonRepository.save(existingHoaDon);
         } else {

@@ -47,7 +47,7 @@ public class CustomerDetailImpl implements CustomerDetailService{
             hoaDonList.forEach(hoaDon -> {
                 DanhSachHoaDon danhSachHoaDon = new DanhSachHoaDon();
                 danhSachHoaDon.setId(hoaDon.getId());
-                danhSachHoaDon.setNgayThanhToan(hoaDon.getNgayThanhToan());
+                danhSachHoaDon.setNgayThanhToan(hoaDon.getDateSuccess());
                 danhSachHoaDon.setTongTien(hoaDon.getTongGia());
 
                 List<HoaDonSanPham> hoaDonSanPhamList = hoaDonSanPhamRepository.findByIdHd(hoaDon.getId());
@@ -106,7 +106,7 @@ public class CustomerDetailImpl implements CustomerDetailService{
         HoaDon hoaDon = new HoaDon();
         hoaDon.setIdKh(gioHangById.getIdKh());
         hoaDon.setTongGia(gioHangById.getTongTien());
-        hoaDon.setNgayThanhToan(new Date());
+        hoaDon.setDateSuccess(new Date());
         HoaDon saveHoaDon = hoaDonRepository.save(hoaDon);
 
         KhachHang khachHangById = khachHangRepository.findById(gioHangById.getIdKh()).get();
@@ -114,7 +114,7 @@ public class CustomerDetailImpl implements CustomerDetailService{
         billDetailNewResponse.setTenKh(khachHangById.getTen());
         billDetailNewResponse.setSdtKh(khachHangById.getSdt());
         billDetailNewResponse.setIdHD(saveHoaDon.getId());
-        billDetailNewResponse.setNgayThanhToan(saveHoaDon.getNgayThanhToan());
+        billDetailNewResponse.setNgayThanhToan(saveHoaDon.getDateSuccess());
         billDetailNewResponse.setTongTien(saveHoaDon.getTongGia());
 
         List<BillDetailNewResponse.SpChiTiet> danhSachSpChiTiet = new ArrayList<>();
