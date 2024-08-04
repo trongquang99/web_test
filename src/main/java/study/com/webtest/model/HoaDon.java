@@ -18,8 +18,12 @@ public class HoaDon {
     @Column(name = "id_Nv")
     private Long idNv;
 
+
+
     @Column(name = "ngay_thanh_toan")
     private Date ngayThanhToan;
+
+
 
     @Column(name = "tong_gia")
     private Float tongGia;
