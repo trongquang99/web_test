@@ -11,21 +11,12 @@ public class HoaDon {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @Column(name = "id_kh")
     private Long idKh;
-
-    @Column(name = "id_Nv")
-    private Long idNv;
-
-
-
     @Column(name = "ngay_thanh_toan")
     private Date ngayThanhToan;
-
-
-
     @Column(name = "tong_gia")
     private Float tongGia;
-
+    @Column(name = "id_Nv")
+    private Long idNv;
 }
